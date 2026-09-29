@@ -51,7 +51,7 @@ export class Casos {
       puntos: [
         'Cada foto del corcho es un nodo con ficha y evidencia.',
         'Cada hilo rojo es una relación etiquetada y fundada.',
-        'El caso demo viene precargado con npm run seed.',
+        'El caso se presenta como proyecto demo dentro de tu instalación privada.',
       ],
     },
     {

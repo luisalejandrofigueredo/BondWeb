@@ -15,7 +15,7 @@ import { Component, signal } from '@angular/core';
             <a [href]="item.href">{{ item.texto }}</a>
           }
         </nav>
-        <span style="font-size: 0.85rem">Sitio institucional del proyecto Bond · Angular 22 · {{ anio() }}</span>
+        <span style="font-size: 0.85rem">Sitio institucional del proyecto Bond · {{ anio() }}</span>
       </div>
     </footer>
   `,

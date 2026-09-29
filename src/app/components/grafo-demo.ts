@@ -21,7 +21,7 @@ interface NodoDemo {
       <h2>Tocá un nodo. Así se razona un caso en Bond</h2>
       <p class="sub">
         Mini demostración del concepto: cada nodo tiene ficha, evidencia y conexiones.
-        En la aplicación real el lienzo es colaborativo (librería <b>ng-gd</b>) con zoom,
+        En la aplicación real el lienzo es colaborativo, con zoom,
         agrupamientos y búsqueda.
       </p>
       <div class="chips">

@@ -5,12 +5,12 @@ import { Component, signal } from '@angular/core';
   standalone: true,
   template: `
     <section class="bloque contenedor" id="arquitectura">
-      <span class="etiqueta">El sistema real</span>
-      <h2>Front-end + Back-end ya funcionando</h2>
+      <span class="etiqueta">El sistema</span>
+      <h2>Todo lo que necesita una investigación, en un solo lugar</h2>
       <p class="sub">
-        Bond no es un mockup: el repositorio ya incluye el cliente Angular, la API
-        Express + Postgres, el panel de administración y el servidor web. Esta página
-        presenta ese sistema.
+        Bond es un sistema completo y ya funcionando: grafo de relaciones,
+        evidencia multimedia, línea de tiempo y administración de equipos
+        y casos.
       </p>
       <div class="rejilla c2" style="margin-top: 30px">
         @for (m of modulos(); track m.nombre) {
@@ -18,7 +18,6 @@ import { Component, signal } from '@angular/core';
             <div class="icono">{{ m.icono }}</div>
             <h3>{{ m.nombre }}</h3>
             <p>{{ m.texto }}</p>
-            <code>{{ m.stack }}</code>
           </article>
         }
       </div>
@@ -29,24 +28,20 @@ import { Component, signal } from '@angular/core';
 export class Arquitectura {
   protected readonly modulos = signal([
     {
-      icono: '🖥️', nombre: 'BondClientTablet — App de investigación',
-      texto: 'Lienzo de grafos colaborativo, visores de PDF/DICOM/video, timeline de eventos, grupos y etiquetas. Componentes standalone con signals y control flow moderno.',
-      stack: 'Angular 22 · ng-gd · Cornerstone · Material',
+      icono: '🖥️', nombre: 'Investigación en grafo',
+      texto: 'Lienzo colaborativo para conectar personas, empresas, vehículos y cuentas. Zoom, agrupamientos, búsqueda y presentación del caso en una sola pantalla.',
     },
     {
-      icono: '🔌', nombre: 'newBondServer — API judicial',
-      texto: 'Proyectos, nodos, relaciones, eventos, archivos y usuarios con autenticación JWT. Esquema auto-sincronizado y datos demo del caso JFK (1991).',
-      stack: 'Express · TypeORM · Postgres · JWT',
+      icono: '🗂️', nombre: 'Gestión de casos y evidencia',
+      texto: 'Proyectos, relaciones, eventos, documentos, audios, videos e imágenes forenses organizados por caso, con accesos por usuario y equipo.',
     },
     {
-      icono: '🛠️', nombre: 'BondAdmin — Administración',
-      texto: 'Gestión de usuarios, permisos y catálogos del sistema para equipos de investigación.',
-      stack: 'Angular · gestión de accesos',
+      icono: '🕰️', nombre: 'Línea de tiempo judicial',
+      texto: 'Qué pasó, cuándo pasó y quién estaba vinculado: la cronología del caso construida sobre la misma evidencia del grafo.',
     },
     {
-      icono: '🌐', nombre: 'BondWebServer + esta web',
-      texto: 'Servidor web y sitio institucional (este proyecto BondWeb) para presentar el sistema con sus imágenes y casos.',
-      stack: 'Node · Angular 22 · signals',
+      icono: '🛡️', nombre: 'Administración y control',
+      texto: 'Gestión de usuarios, permisos y catálogos para que cada equipo vea solo los casos que le corresponden.',
     },
   ]);
 }

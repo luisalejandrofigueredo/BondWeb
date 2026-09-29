@@ -40,7 +40,7 @@ export class Evidencias {
     { icono: '🏦', titulo: 'Cuentas bancarias', texto: 'Transacciones y triangulaciones trazadas como aristas entre cuentas y titulares.', etiqueta: 'arista · transacción' },
     { icono: '📄', titulo: 'Documentos', texto: 'PDF y Word adjuntos a los nodos: pericias, escritos y legajos siempre a mano.', etiqueta: 'PDF · Word' },
     { icono: '🎧', titulo: 'Audios', texto: 'Escuchas y testimonios asociados a eventos y personas dentro del proyecto.', etiqueta: 'audio · evento' },
-    { icono: '🩻', titulo: 'DICOM médico-forense', texto: 'Visor DICOM integrado (Cornerstone/DWV) para autopsias y estudios complementarios.', etiqueta: 'DICOM · visor' },
+    { icono: '🩻', titulo: 'Imagen forense', texto: 'Visor de imágenes integrado para autopsias y estudios complementarios del caso.', etiqueta: 'imagen · pericia' },
     { icono: '🎞️', titulo: 'Video y timeline', texto: 'Videos y línea de tiempo de eventos: qué pasó, cuándo y quién estaba vinculado.', etiqueta: 'timeline' },
     { icono: '🕸️', titulo: 'Detección de testaferros', texto: 'La topología del grafo revela intermediarios y estructuras de integración.', etiqueta: 'análisis de red' },
   ]);

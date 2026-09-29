@@ -5,22 +5,20 @@ import { Component, signal } from '@angular/core';
   standalone: true,
   template: `
     <section class="bloque contenedor" id="inicio-rapido">
-      <span class="etiqueta">Puesta en marcha</span>
-      <h2>Probalo con el caso demo en minutos</h2>
+      <span class="etiqueta">Instalación</span>
+      <h2>Se instala en tu red privada</h2>
       <p class="sub">
-        El back-end incluye un seed que crea el proyecto <b>JFK (1991)</b> con nodos,
-        relaciones, grupos y eventos. Usuario demo: <b>jfk&#64;bond.local</b>.
+        Por seguridad, Bond <b>no está disponible en internet</b>: se instala dentro
+        de la red privada de tu institución y solo es accesible desde ella.
+        Tus casos y tu evidencia nunca salen de tu infraestructura.
       </p>
-      <div class="pasos">
+      <div class="rejilla c3" style="margin-top: 30px">
         @for (p of pasos(); track p.titulo) {
-          <div class="paso">
-            <div class="num">{{ p.num }}</div>
-            <div>
-              <h3 style="margin-bottom: 8px">{{ p.titulo }}</h3>
-              <p class="sub" style="font-size: 0.95rem; margin-bottom: 10px">{{ p.texto }}</p>
-              <pre class="bloque-codigo">{{ p.codigo }}</pre>
-            </div>
-          </div>
+          <article class="tarjeta">
+            <div class="icono">{{ p.icono }}</div>
+            <h3>{{ p.titulo }}</h3>
+            <p>{{ p.texto }}</p>
+          </article>
         }
       </div>
     </section>
@@ -30,19 +28,16 @@ import { Component, signal } from '@angular/core';
 export class Quickstart {
   protected readonly pasos = signal([
     {
-      num: '1', titulo: 'Levantá la API (newBondServer)',
-      texto: 'Configurá src/.env con confirmUrl y changePasswordUrl, y una base Postgres bond local.',
-      codigo: 'cd newBondServer\nnpm install\nnpm run seed        # crea el caso JFK (1991)\nnpm run dev           # API con JWT desactivado (-nm=true)',
+      icono: '🔒', titulo: 'Red privada, sin internet',
+      texto: 'El sistema vive en tus propios servidores y solo responde dentro de tu red interna. Nada se expone a la web pública.',
     },
     {
-      num: '2', titulo: 'Levantá el cliente (BondClientTablet)',
-      texto: 'Apunta a http://localhost:5000/ vía environment.baseUrl.',
-      codigo: 'cd BondClientTablet\nnpm install\nnpm start           # http://localhost:4200/',
+      icono: '🏛️', titulo: 'Instalación a medida',
+      texto: 'Instalamos y configuramos Bond en tu infraestructura, con tus usuarios, equipos y casos listos para trabajar.',
     },
     {
-      num: '3', titulo: 'Ingresá al caso demo',
-      texto: 'Abrí el gestor de proyectos y buscá el proyecto JFK (1991): grafo, timeline y visores listos.',
-      codigo: 'usuario: jfk@bond.local\nclave:   JFKDemo2026!',
+      icono: '🤝', titulo: 'Acompañamiento',
+      texto: 'Capacitamos a tu equipo de investigación para pasar del corcho y las planillas al grafo desde el primer caso.',
     },
   ]);
 }
