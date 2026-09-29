@@ -1,0 +1,35 @@
+import { Component, signal } from '@angular/core';
+
+@Component({
+  selector: 'app-header',
+  standalone: true,
+  template: `
+    <header class="barra">
+      <div class="barra-int">
+        <a class="marca" href="#inicio">
+          <span class="marca-logo">B</span>
+          <span><b>BOND</b><small>GRAFOS · JUDICIAL · SEGURIDAD</small></span>
+        </a>
+        <button class="menu-btn" (click)="menuAbierto.update(v => !v)" aria-label="Abrir menú">☰</button>
+        <nav class="nav" [class.movill]="menuAbierto()">
+          @for (item of enlaces(); track item.href) {
+            <a [href]="item.href" (click)="menuAbierto.set(false)">{{ item.texto }}</a>
+          }
+          <a class="btn btn-primario" href="#demo" (click)="menuAbierto.set(false)">Ver demo</a>
+        </nav>
+      </div>
+    </header>
+  `,
+  styles: [],
+})
+export class Header {
+  protected readonly menuAbierto = signal(false);
+  protected readonly enlaces = signal([
+    { href: '#evidencia', texto: 'Evidencia' },
+    { href: '#versus', texto: 'Bond vs Excel' },
+    { href: '#grafo', texto: 'Grafo en vivo' },
+    { href: '#arquitectura', texto: 'Sistema' },
+    { href: '#casos', texto: 'Casos' },
+    { href: '#inicio-rapido', texto: 'Instalación' },
+  ]);
+}
