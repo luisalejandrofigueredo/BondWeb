@@ -242,26 +242,28 @@ h2 { font-size: clamp(1.8rem, 4vw, 2.7rem); margin-bottom: 14px; }
 .foto-marco img { display: block; width: 100%; height: auto; }
 .foto-marco figcaption { padding: 13px 18px; color: var(--muted); font-size: 0.88rem; border-top: 1px solid var(--linea); }
 
-/* Grafo interactivo */
-.grafo-demo { display: grid; grid-template-columns: 1.2fr 0.8fr; gap: 18px; margin-top: 30px; align-items: stretch; }
-.nodo { cursor: pointer; }
-.nodo circle.nucleo { transition: r 0.15s ease; }
-.nodo.seleccionado circle.halo { stroke: var(--cian); opacity: 0.9; }
-.detalle-nodo h3 { margin-bottom: 6px; }
-.detalle-nodo .tipo {
-  display: inline-block; font-size: 0.75rem; font-weight: 800; letter-spacing: 0.1em; text-transform: uppercase;
-  color: var(--cian); background: rgba(56,225,255,0.1); border: 1px solid rgba(56,225,255,0.3);
-  padding: 4px 10px; border-radius: 999px; margin-bottom: 12px;
+/* Expedientes */
+.exp-diagrama { margin-top: 22px; }
+
+/* Videos */
+.video-marco {
+  margin-top: 26px;
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  border-radius: 20px;
+  border: 1px solid var(--linea);
+  background: #000;
+  box-shadow: 0 30px 80px rgba(0, 0, 0, 0.5);
 }
-.detalle-nodo dl { display: grid; grid-template-columns: auto 1fr; gap: 8px 14px; margin: 14px 0 0; font-size: 0.92rem; }
-.detalle-nodo dt { color: var(--muted); }
-.detalle-nodo dd { margin: 0; }
-.chips { display: flex; gap: 8px; flex-wrap: wrap; margin-top: 16px; }
-.chips button {
-  border: 1px solid var(--linea); background: rgba(255,255,255,0.04); color: var(--texto);
-  border-radius: 999px; padding: 8px 14px; font-size: 0.82rem; font-weight: 700; cursor: pointer;
+.video-marco iframe {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
 }
-.chips button.activo, .chips button:hover { border-color: var(--bond-2); background: rgba(216,27,96,0.16); }
 
 /* Casos */
 .casos-tabs { display: flex; gap: 10px; flex-wrap: wrap; margin: 26px 0 18px; }
@@ -310,7 +312,7 @@ footer {
 .foot-grid a:hover { color: #fff; }
 
 @media (max-width: 960px) {
-  .hero-grid, .versus, .grafo-demo, .caso { grid-template-columns: 1fr; }
+  .hero-grid, .versus, .caso { grid-template-columns: 1fr; }
   .rejilla.c4 { grid-template-columns: repeat(2, 1fr); }
   .rejilla.c3 { grid-template-columns: 1fr 1fr; }
   .nav { display: none; }

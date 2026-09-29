@@ -15,7 +15,7 @@ import { Component, signal } from '@angular/core';
             un caso complejo se vea —y se pruebe— en una sola pantalla.
           </p>
           <div class="hero-cta">
-            <a class="btn btn-primario" href="#demo">▶ Ver cómo se investiga</a>
+            <a class="btn btn-primario" href="#videos">▶ Ver Bond en video</a>
             <a class="btn btn-fantasma" href="#arquitectura">Conocer el sistema</a>
           </div>
           <div class="hero-mini">
@@ -24,8 +24,8 @@ import { Component, signal } from '@angular/core';
             }
           </div>
         </div>
-        <div class="tarjeta-grafo" id="demo">
-          <div class="cinta"><span>☰</span> Caso Cloacas — grafo en vivo</div>
+        <div class="tarjeta-grafo">
+          <div class="cinta"><span>☰</span> Caso Cloacas</div>
           <svg viewBox="0 0 520 340" role="img" aria-label="Grafo de caso criminal">
             <rect width="520" height="340" fill="#0b1120" />
             @for (arista of aristas(); track arista.id) {

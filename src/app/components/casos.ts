@@ -51,14 +51,14 @@ export class Casos {
       puntos: [
         'Cada foto del corcho es un nodo con ficha y evidencia.',
         'Cada hilo rojo es una relación etiquetada y fundada.',
-        'El caso se presenta como proyecto demo dentro de tu instalación privada.',
+        'El caso se presenta como proyecto cargado dentro de tu instalación privada.',
       ],
     },
     {
       id: 'cloacas', tab: 'Caso Cloacas',
       titulo: 'Análisis criminal en tiempo real',
       imagen: 'assets/presentacionbond.jpg', alt: 'Grafo del Caso Cloacas en Bond frente a planilla Excel tachada',
-      descripcion: 'De la planilla interminable al grafo del Caso Cloacas: nodos de personas, empresas y jurisdicciones conectados en vivo.',
+      descripcion: 'De la planilla interminable al grafo del Caso Cloacas: nodos de personas, empresas y jurisdicciones conectados entre sí.',
       puntos: [
         'Adiós a los excesos de filas y columnas.',
         'El grafo muestra rutas de integración de un vistazo.',

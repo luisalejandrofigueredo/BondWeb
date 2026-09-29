@@ -26,8 +26,9 @@ export class Pie {
   protected readonly enlaces = signal([
     { href: '#evidencia', texto: 'Evidencia' },
     { href: '#versus', texto: 'Bond vs Excel' },
-    { href: '#grafo', texto: 'Grafo' },
+    { href: '#expedientes', texto: 'Expedientes' },
     { href: '#casos', texto: 'Casos' },
+    { href: '#videos', texto: 'Videos' },
     { href: '#inicio-rapido', texto: 'Instalación' },
   ]);
 }

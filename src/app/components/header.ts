@@ -15,7 +15,7 @@ import { Component, signal } from '@angular/core';
           @for (item of enlaces(); track item.href) {
             <a [href]="item.href" (click)="menuAbierto.set(false)">{{ item.texto }}</a>
           }
-          <a class="btn btn-primario" href="#demo" (click)="menuAbierto.set(false)">Ver demo</a>
+          <a class="btn btn-primario" href="#videos" (click)="menuAbierto.set(false)">▶ Ver videos</a>
         </nav>
       </div>
     </header>
@@ -27,9 +27,10 @@ export class Header {
   protected readonly enlaces = signal([
     { href: '#evidencia', texto: 'Evidencia' },
     { href: '#versus', texto: 'Bond vs Excel' },
-    { href: '#grafo', texto: 'Grafo en vivo' },
+    { href: '#expedientes', texto: 'Expedientes' },
     { href: '#arquitectura', texto: 'Sistema' },
     { href: '#casos', texto: 'Casos' },
+    { href: '#videos', texto: 'Videos' },
     { href: '#inicio-rapido', texto: 'Instalación' },
   ]);
 }
