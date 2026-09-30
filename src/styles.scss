@@ -317,6 +317,9 @@ footer {
 .foot-grid nav { display: flex; gap: 18px; flex-wrap: wrap; }
 .foot-grid a { color: var(--muted); text-decoration: none; font-size: 0.92rem; font-weight: 600; }
 .foot-grid a:hover { color: #fff; }
+.foot-contacto { display: flex; flex-direction: column; gap: 6px; font-size: 0.92rem; }
+.foot-contacto b { color: var(--texto); }
+.foot-contacto a { color: var(--cian); }
 
 @media (max-width: 960px) {
   .hero-grid, .versus, .caso { grid-template-columns: 1fr; }

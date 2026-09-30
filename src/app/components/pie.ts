@@ -15,6 +15,10 @@ import { Component, signal } from '@angular/core';
             <a [href]="item.href">{{ item.texto }}</a>
           }
         </nav>
+        <div class="foot-contacto">
+          <span>Contacto: <b>Luis Alejandro Figueredo</b></span>
+          <a href="mailto:luisalejandrofigueredo@gmail.com">✉ luisalejandrofigueredo&#64;gmail.com</a>
+        </div>
         <span style="font-size: 0.85rem">Sitio institucional del proyecto Bond · {{ anio() }}</span>
       </div>
     </footer>
