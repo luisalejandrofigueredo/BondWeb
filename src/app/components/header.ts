@@ -7,7 +7,7 @@ import { Component, signal } from '@angular/core';
     <header class="barra">
       <div class="barra-int">
         <a class="marca" href="#inicio">
-          <span class="marca-logo">B</span>
+          <img class="marca-logo" src="icon.svg" alt="Bond" width="40" height="40">
           <span><b>BOND</b><small>GRAFOS · JUDICIAL · SEGURIDAD</small></span>
         </a>
         <button class="menu-btn" (click)="menuAbierto.update(v => !v)" aria-label="Abrir menú">☰</button>

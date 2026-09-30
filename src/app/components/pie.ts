@@ -7,7 +7,7 @@ import { Component, signal } from '@angular/core';
     <footer>
       <div class="contenedor foot-grid">
         <a class="marca" href="#inicio">
-          <span class="marca-logo">B</span>
+          <img class="marca-logo" src="icon.svg" alt="Bond" width="40" height="40">
           <span><b>BOND</b><small>GRAFOS · ANÁLISIS JUDICIAL · SEGURIDAD</small></span>
         </a>
         <nav>

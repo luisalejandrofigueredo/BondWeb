@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Bond">
+  <rect width="64" height="64" rx="14" fill="#0B1120"/>
+  <circle cx="32" cy="32" r="17" fill="none" stroke="#C01163" stroke-width="8"/>
+  <g stroke="#C01163" stroke-width="2.4" fill="#C01163">
+    <line x1="26" y1="28" x2="38" y2="28"/>
+    <line x1="26" y1="28" x2="26" y2="37"/>
+    <line x1="38" y1="28" x2="38" y2="37"/>
+    <line x1="26" y1="28" x2="38" y2="37"/>
+    <line x1="38" y1="28" x2="26" y2="37"/>
+    <line x1="26" y1="37" x2="38" y2="37"/>
+    <circle cx="26" cy="28" r="3.6" stroke="none"/>
+    <circle cx="38" cy="28" r="3.6" stroke="none"/>
+    <circle cx="26" cy="37" r="3.6" stroke="none"/>
+    <circle cx="38" cy="37" r="3.6" stroke="none"/>
+  </g>
+  <g stroke="#C01163" stroke-width="2.6" fill="#C01163">
+    <line x1="20" y1="46" x2="45" y2="18"/>
+    <circle cx="19" cy="47" r="3.4" stroke="none"/>
+    <circle cx="46" cy="17" r="3.4" stroke="none"/>
+  </g>
+</svg>
